@@ -7,10 +7,18 @@ import base64
 from PIL import Image
 import numpy as np
 
-def load_fire_model():
-    return load_model("model/FFD.keras")  # Make sure this file is in the same directory
+@st.cache_resource
+def load_model_from_url(url, filename):
+    if not os.path.exists(filename):
+        response = requests.get(url, stream=True)
+        response.raise_for_status()  # Check for HTTP errors
+        with open(filename, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+    return load_model(filename)
 
-model = load_fire_model()
+model_url = "https://your-cloud-server.com/path/to/FFD.keras"
+model = load_model_from_url(model_url, "FFD.keras")
 
 # Page config
 
