@@ -8,6 +8,21 @@ import base64
 from PIL import Image
 import numpy as np
 
+st.set_page_config(page_title="Forest Fire Detection", layout="wide", page_icon="🔥")
+
+hide_st_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .block-container {
+        padding-top: 0px;  
+        padding-bottom: 0px;     
+    }
+    </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 @st.cache_resource
 def loadmodel():
     model_path = hf_hub_download(
@@ -19,9 +34,6 @@ def loadmodel():
 
 model = load_model(loadmodel())
 
-# Page config
-
-st.set_page_config(page_title="Forest Fire Detection", layout="wide", page_icon="🔥")
 
 
 
