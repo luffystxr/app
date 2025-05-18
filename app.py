@@ -6,6 +6,7 @@ import time
 import base64
 from PIL import Image
 import numpy as np
+import gdown
 
 @st.cache_resource
 def load_model_from_url(url, filename):
@@ -17,7 +18,7 @@ def load_model_from_url(url, filename):
                 f.write(chunk)
     return load_model(filename)
 
-model_url = "https://your-cloud-server.com/path/to/FFD.keras"
+model_url = "https://drive.google.com/file/d/18lho3k_OkGxwLw3s9qAcNW78rPpxZi7X/view?usp=sharing"
 model = load_model_from_url(model_url, "FFD.keras")
 
 # Page config
