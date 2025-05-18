@@ -3,3 +3,4 @@ tensorflow
 streamlit-lottie
 pillow
 numpy
+huggingface_hub
