@@ -253,10 +253,10 @@ with col2:
 
 col1,col2,col3 = st.columns([1,2,1])
 with col1:
-    with open("gif/plant.gif", "rb") as f:
+    with open("gifs/plant.gif", "rb") as f:
                     data = f.read()
                     b50 = base64.b64encode(data).decode()
-    with open("gif/treeonfire.gif", "rb") as f:
+    with open("gifs/treeonfire.gif", "rb") as f:
                     data = f.read()
                     b51 = base64.b64encode(data).decode()
     if(fire):
@@ -266,10 +266,10 @@ with col1:
         st.markdown(f"""<img src="data:image/gif;base64,{b50}" alt="Link" width="1000" height="320" >""", unsafe_allow_html=True)
 
 with col2:
-    with open("gif/angry.gif", "rb") as f:
+    with open("gifs/angry.gif", "rb") as f:
                     data = f.read()
                     b60 = base64.b64encode(data).decode()
-    with open("gif/safe.gif", "rb") as f:
+    with open("gifs/safe.gif", "rb") as f:
                     data = f.read()
                     b61 = base64.b64encode(data).decode()
     if(fire):
@@ -289,10 +289,10 @@ with col2:
 """, unsafe_allow_html=True)
 
 with col3:
-    with open("gif/plant.gif", "rb") as f:
+    with open("gifs/plant.gif", "rb") as f:
                     data = f.read()
                     b50 = base64.b64encode(data).decode()
-    with open("gif/treeonfire.gif", "rb") as f:
+    with open("gifs/treeonfire.gif", "rb") as f:
                     data = f.read()
                     b51 = base64.b64encode(data).decode()
     if(fire):
@@ -316,15 +316,15 @@ st.markdown("#### 📬 Connect With Me")
 import streamlit as st
 import base64
 
-with open("gif/msg.gif", "rb") as f:
+with open("gifs/msg.gif", "rb") as f:
     data = f.read()
     b64 = base64.b64encode(data).decode()
 
-with open("gif/linked.gif", "rb") as f:
+with open("gifs/linked.gif", "rb") as f:
     data = f.read()
     b65 = base64.b64encode(data).decode()
 
-with open("gif/git.gif", "rb") as f:
+with open("gifs/git.gif", "rb") as f:
     data = f.read()
     b66 = base64.b64encode(data).decode()
 
