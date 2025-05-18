@@ -154,7 +154,7 @@ with col1:
     st.markdown("###  🔎 Upload Image To Detect Forest Fire")
     st.markdown("**Note** : this Model Trained to Predict Fire in Forest")
     st.markdown("<br>", unsafe_allow_html=True)
-    uploaded_file = st.file_uploader("", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+    uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
     if uploaded_file:
         image = Image.open(uploaded_file)
 
