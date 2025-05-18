@@ -9,17 +9,15 @@ import numpy as np
 import gdown
 
 @st.cache_resource
-def load_model_from_url(url, filename):
-    if not os.path.exists(filename):
-        response = requests.get(url, stream=True)
-        response.raise_for_status()  # Check for HTTP errors
-        with open(filename, "wb") as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
-    return load_model(filename)
+def loadmodel():
+    model_path = hf_hub_download(
+        repo_id="Sridharsri098/ffdkeras",  # Your model repo name
+        filename="src/model/FFD.keras",
+        repo_type="space"  # Explicitly specify model repo
+    )
+    return model_path
 
-model_url = "https://drive.google.com/file/d/18lho3k_OkGxwLw3s9qAcNW78rPpxZi7X/view?usp=sharing"
-model = load_model_from_url(model_url, "FFD.keras")
+model = load_model(loadmodel())
 
 # Page config
 
