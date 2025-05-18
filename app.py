@@ -7,7 +7,6 @@ import time
 import base64
 from PIL import Image
 import numpy as np
-import gdown
 
 @st.cache_resource
 def loadmodel():
