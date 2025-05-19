@@ -8,20 +8,6 @@ import base64
 from PIL import Image
 import numpy as np
 
-import tensorflow as tf
-
-# Enable GPU memory growth so TF allocates memory as needed
-gpus = tf.config.experimental.list_physical_devices('GPU')
-if gpus:
-    try:
-        for gpu in gpus:
-            tf.config.experimental.set_memory_growth(gpu, True)
-        print(f"Enabled memory growth for {len(gpus)} GPU(s)")
-    except RuntimeError as e:
-        print(f"Error setting memory growth: {e}")
-else:
-    print("No GPU devices found")
-
 
 st.set_page_config(page_title="Forest Fire Detection", layout="wide", page_icon="🔥")
 
