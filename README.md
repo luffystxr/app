@@ -73,17 +73,6 @@ A **deep learning-based system** was created using a **custom Convolutional Neur
 
 ---
 
-## 📈 Results
-
-| Prediction Set | Total Images | Correct Predictions | Accuracy |
-|----------------|--------------|----------------------|----------|
-| Fire Images    | 9            | 8                    | ~89%     |
-| No Fire Images | 9            | 8                    | ~89%     |
-
-Overall test accuracy: **83.4%**
-
----
-
 ## 📸 App Features
 
 - 🔍 Upload image to detect fire
