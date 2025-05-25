@@ -77,8 +77,6 @@ A **deep learning-based system** was created using a **custom Convolutional Neur
 
 - 🔍 Upload image to detect fire
 - 🧠 Get prediction & confidence score
-- 🔊 Fire alert audio for fire images
-- 🧾 Download prediction report
 - ✨ Animated UI using Lottie
 
 ---
