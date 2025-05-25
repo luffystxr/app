@@ -1,12 +1,12 @@
 
-# 🌲 Forest Fire Detection Using Deep Learning 🔥
+# 🌲 Forest Fire Detection Using Deep Learning Image Classification 🔥
 
 Developed by: **Sridharan S**  
+
+I have done this project during my internship at edunet foundation in collaboration with shell in AI skills in green technology
+
 AICTE Student ID: `STU67bafc13b02e31740307475`  
 AICTE Internship ID: `INTERNSHIP_174099535967c57b1f336c3`  
-
-Live App 👉 [forestfiredetect.streamlit.app](https://forestfiredetect.streamlit.app)  
-Source Code 👉 [GitHub Repository](https://github.com/luffystxr/app.git)
 
 ---
 
